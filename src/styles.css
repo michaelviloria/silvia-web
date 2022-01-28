@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --primary-color: #30cc28ff;
+  --secondary-color: #aa0000ff;
+  --tertiary-color: #232323ff;
+  --white-color: #fff;
+  --gray-color: #676666;
+}
+
+/*       CAROUSEL       */
+#carouselMain {
+  padding: 0;
+}
+
+#carouselMain .carousel-inner {
+  height: 300px;
+}
+
+#carouselMain .carousel-inner .carousel-item {
+  position: relative;
+}
+
+#carouselMain .carousel-inner .carousel-item .carousel--tag {
+  position: absolute;
+  bottom: 60px;
+  left: 5px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  align-items: center;
+}
+
+#carouselMain .carousel-control-prev,
+#carouselMain .carousel-control-next {
+  width: 5%;
+}
+
+#carouselMain .carousel--tag picture img {
+  width: 30px;
+}
+
+#carouselMain .carousel--tag p {
+  padding: 7.5px 10px;
+  margin: 0;
+}
+
+/*       HEADER | INFO       */
+.header--info {
+  justify-content: space-between;
+  background-color: var(--tertiary-color);
+  color: var(--white-color);
+  border-top: 4px solid var(--primary-color);
+  padding: 4px 30px 4px 25px;
+  align-items: center;
+}
+
+.header--info .contact .whatsapp-icon {
+  margin: 0 4px 0 20px;
+  height: 20px;
+}
+
+.header--info .contact .whatsapp-icon img {
+  height: 100%;
+}
+
+/*       HEADER | LOGO      */
+.header--logo {
+  position: relative;
+}
+
+.header--logo picture img {
+  width: 42px;
+}
+
+.header--logo h1 {
+  color: var(--primary-color);
+  font-size: 63px;
+  margin: 0;
+}
+
+.header--logo h6 {
+  color: var(--gray-color);
+  font-size: 23px;
+}
+
+.header--logo .header--social-media {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  align-items: center;
+}
+
+.header--logo .header--social-media p {
+  margin: 0;
+}
+
+.header--logo .header--social-media picture img {
+  width: 42px;
+  margin: 0 5px;
+}
+
+/*       HEADER | NAV       */
+.header--nav {
+  margin-top: 20px;
+  border-top: 1px solid var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.header--nav ul {
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.header--nav ul li {
+  list-style: none;
+  margin: 0 40px;
+}
+
+.header--nav ul li a {
+  color: #000;
+}
+
+/*       MAIN | NEWS | PRINCIPAL      */
+.main--container .main--news .news--principal picture img {
+  width: 100%;
+}
+
+.main--container .main--news .news--principal {
+  border-bottom: 4px solid #30cc28;
+}
+
+/*       MAIN | NEWS | LASTEST         */
+.main--news .news--lastest .lastest--title {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
+
+/*       MAIN | NEWS | MOST READ         */
+.main--most-read .most-read--title {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.main--most-read .most-read--title h5 {
+  background-color: var(--primary-color);
+}
+
+.main--most-read .most-read--article picture img {
+  width: 100%;
+}
+
+.main--most-read .most-read--article p {
+  color: var(--gray-color);
+}
