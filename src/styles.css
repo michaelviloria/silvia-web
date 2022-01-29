@@ -123,6 +123,10 @@
 }
 
 /*       MAIN | NEWS | PRINCIPAL      */
+.main--container {
+  border-bottom: 4px solid #30cc28;
+}
+
 .main--container .main--news .news--principal picture img {
   width: 100%;
 }
@@ -137,19 +141,33 @@
   background-color: var(--secondary-color);
 }
 
-/*       MAIN | NEWS | MOST READ         */
-.main--most-read .most-read--title {
+/*       MOST READ       */
+.most-read--title {
   border-bottom: 1px solid var(--primary-color);
 }
 
-.main--most-read .most-read--title h5 {
+.most-read--title h5 {
   background-color: var(--primary-color);
+  color: var(--white-color);
+  position: relative;
+  top: 3px;
 }
 
-.main--most-read .most-read--article picture img {
+.most-read--article picture img {
   width: 100%;
 }
 
-.main--most-read .most-read--article p {
+.most-read--article p {
   color: var(--gray-color);
+}
+
+/*       MOST READ | ADVERTISING        */
+.most-read--advertising picture img {
+  width: 100%;
+}
+
+/*       MAIN | SPORTS       */
+.sports--container .sports--title {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
 }
