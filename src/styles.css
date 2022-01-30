@@ -85,18 +85,18 @@
   font-size: 23px;
 }
 
-.header--logo .header--social-media {
+.header--social-media {
   position: absolute;
   right: 20px;
   top: 25px;
   align-items: center;
 }
 
-.header--logo .header--social-media p {
+.header--social-media p {
   margin: 0;
 }
 
-.header--logo .header--social-media picture img {
+.header--social-media picture img {
   width: 42px;
   margin: 0 5px;
 }
@@ -218,6 +218,29 @@
 
 /*       FOOTER       */
 footer {
-  height: 200px;
+  height: 250px;
   content: "";
+}
+
+/*       FOOTER | SOCIAL MEDIA       */
+.footer--social-media picture img {
+  width: 42px;
+  margin: 0 5px;
+}
+
+/*       FOOTER | CONTENT       */
+.footer--content li {
+  list-style: none;
+}
+
+.footer--content li a {
+  color: var(--white-color);
+}
+
+.footer--content .content--list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
 }

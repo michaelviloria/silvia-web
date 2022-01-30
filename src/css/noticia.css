@@ -1,0 +1,52 @@
+/*       HEADER | LOGO       */
+.header--logo h1 {
+  font-size: 36px;
+}
+
+.header--logo h6 {
+  font-size: 12px;
+}
+
+.header--social-media {
+  top: calc(33px - 21px);
+}
+
+/*       HEADER | NAV       */
+.header--nav {
+  margin-top: 0px;
+}
+
+/*       MAIN | ARTICLE PRINCIPAL       */
+.article--principal picture img {
+  width: 100%;
+}
+
+/*       ARTICLE CONTENT | AUTHOR       */
+.content--author {
+  position: relative;
+}
+
+.content--author::before {
+  border-bottom: 2px solid var(--primary-color);
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.content--author h6 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.content--author span {
+  color: var(--gray-color);
+  font-size: 16px;
+}
+
+.author--image img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
