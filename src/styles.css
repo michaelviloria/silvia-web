@@ -126,9 +126,11 @@
 
 #headerNav.show {
   border-top: 2px solid var(--primary-color);
-  position: sticky;
-  top: 0;
   display: block;
+  position: fixed;
+  top: 0;
+  left: calc(50% - 570px);
+  margin-top: 0;
   z-index: 1;
 }
 #headerNav.no-visible {
