@@ -16,7 +16,7 @@
 }
 
 #carouselMain .carousel-inner {
-  height: 300px;
+  height: 250px;
 }
 
 #carouselMain .carousel-inner .carousel-item {
@@ -25,7 +25,7 @@
 
 #carouselMain .carousel-inner .carousel-item .carousel--tag {
   position: absolute;
-  bottom: 60px;
+  bottom: calc(20% + 42px);
   left: 5px;
   background-color: var(--primary-color);
   color: var(--white-color);
@@ -75,9 +75,12 @@
 }
 
 .header--logo h1 {
-  color: var(--primary-color);
   font-size: 63px;
   margin: 0;
+}
+
+.header--logo h1 a {
+  color: var(--primary-color);
 }
 
 .header--logo h6 {
@@ -99,6 +102,18 @@
 .header--social-media picture img {
   width: 42px;
   margin: 0 5px;
+}
+
+.header--weather {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  align-items: center;
+}
+
+.header--weather picture {
+  background-color: var(--gray-color);
+  margin-right: 2px;
 }
 
 /*       HEADER | NAV       */
@@ -234,12 +249,14 @@
 footer {
   height: 240px;
   content: "";
+  background-color: var(--tertiary-color);
 }
 
 /*       FOOTER | SOCIAL MEDIA       */
 .footer--social-media picture img {
-  width: 42px;
+  width: 30px;
   margin: 0 5px;
+  
 }
 
 /*       FOOTER | CONTENT       */
@@ -249,6 +266,7 @@ footer {
 
 .footer--content li a {
   color: var(--white-color);
+  opacity: 60%;
 }
 
 .footer--content .content--list ul {
@@ -262,4 +280,6 @@ footer {
 /*       FOOTER | COPYRIGHT       */
 .footer--copyright {
   color: var(--white-color);
+  margin-top: 20px;
+  opacity: 45%;
 }

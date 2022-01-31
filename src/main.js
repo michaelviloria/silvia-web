@@ -1,7 +1,7 @@
 const headerNav = document.getElementById("headerNav");
 
 window.onscroll = function () {
-  if(window.scrollY >= 605) {
+  if(window.scrollY >= 598) {
     headerNav.classList.remove("no-visible");
     headerNav.classList.add("show");
   }

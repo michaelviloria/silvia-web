@@ -31,7 +31,7 @@
           <img src="../../img/1.jpg" class="d-block w-100" alt="..." />
           <div class="carousel--tag d-flex">
             <picture>
-              <img src="../../img/arrow-icon.png" alt="Arrow icon" />
+              <img src="../../img/icons/arrow-icon.png" alt="Arrow icon" />
             </picture>
             <p>La delegación argentina llega a España.</p>
           </div>
@@ -40,7 +40,7 @@
           <img src="../../img/1.jpg" class="d-block w-100" alt="..." />
           <div class="carousel--tag d-flex">
             <picture>
-              <img src="../../img/arrow-icon.png" alt="Arrow icon" />
+              <img src="../../img/icons/arrow-icon.png" alt="Arrow icon" />
             </picture>
             <p>La delegación argentina llega a España 2.</p>
           </div>
@@ -49,7 +49,7 @@
           <img src="../../img/1.jpg" class="d-block w-100" alt="..." />
           <div class="carousel--tag d-flex">
             <picture>
-              <img src="../../img/arrow-icon.png" alt="Arrow icon" />
+              <img src="../../img/icons/arrow-icon.png" alt="Arrow icon" />
             </picture>
             <p>La delegación argentina llega a España 3.</p>
           </div>
@@ -84,7 +84,7 @@
         <div class="contact d-flex">
           <span>Cuenta con nosotros:</span>
           <picture class="whatsapp-icon">
-            <img src="../../img/whatsapp-icon.png" alt="whatsapp icon" />
+            <img src="../../img/icons/whatsapp-icon.png" alt="whatsapp icon" />
           </picture>
           <span>+54 3875549588</span>
         </div>
@@ -101,18 +101,27 @@
           <p>Siguenos:</p>
           <picture>
             <a href="https://facebook.com" target="blank">
-              <img src="../../img/facebook-icon.png" alt="Facebook icon" />
+              <img src="../../img/icons/facebook-icon.png" alt="Facebook icon" />
             </a>
           </picture>
           <picture>
             <a href="https://instagram.com">
-              <img src="../../img/instagram-icon.png" alt="Instagram icon" />
+              <img src="../../img/icons/instagram-icon.png" alt="Instagram icon" />
             </a>
           </picture>
           <picture>
             <a href="https://twitter.com">
-              <img src="../../img/twitter-icon.png" alt="Twitter icon" />
+              <img src="../../img/icons/twitter-icon.png" alt="Twitter icon" />
             </a>
+          </picture>
+        </section>
+
+        <section class="header--weather d-flex">
+          <picture>
+            <img src="" alt="">
+          </picture>
+          <picture>
+            <img src="" alt="">
           </picture>
         </section>
       </section>
@@ -127,6 +136,15 @@
         </ul>
       </nav>
     </header>
+
+    <nav class="header--nav container no-visible" id="headerNav">
+      <ul class="d-flex">
+        <li><a href="#">INICIO</a></li>
+        <li><a href="#">NOTICIAS</a></li>
+        <li><a href="#">DE NOSOTRAS PARA UDS.</a></li>
+        <li><a href="#">CONTACTO</a></li>
+      </ul>
+    </nav>
 
     <!-- MAIN -->
     <main class="container">
@@ -212,30 +230,30 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="container mt-3 px-4 pt-4 bg-dark">
-      <div class="row">
+    <footer class="container mt-3 px-4 pt-4">
+      <div class="row mt-2">
         <!-- FOOTER | SOCIAL MEDIA -->
-        <div class="footer--social-media col-4 mb-4">
+        <div class="footer--social-media col-3 offset-1 mb-4">
           <picture>
             <a href="https://facebook.com" target="blank">
-              <img src="../../img/facebook-icon.png" alt="Facebook icon" />
+              <img src="../../img/icons/facebook-icon-white.png" alt="Facebook icon" />
             </a>
           </picture>
           <picture>
             <a href="https://instagram.com">
-              <img src="../../img/instagram-icon.png" alt="Instagram icon" />
+              <img src="../../img/icons/instagram-icon-white.png" alt="Instagram icon" />
             </a>
           </picture>
           <picture>
             <a href="https://twitter.com">
-              <img src="../../img/twitter-icon.png" alt="Twitter icon" />
+              <img src="../../img/icons/twitter-icon-white.png" alt="Twitter icon" />
             </a>
           </picture>
         </div>
       </div>
       <!-- FOOTER | CONTENT -->
-      <div class="footer--content row">
-        <div class="content--list col-4">
+      <div class="footer--content row ">
+        <div class="content--list col-3 offset-1">
           <ul>
             <li>
               <a href="#">Audio y subtitulos</a>
@@ -248,7 +266,7 @@
             </li>
           </ul>
         </div>
-        <div class="content--list col-4">
+        <div class="content--list col-3 offset-1">
           <ul>
             <li>
               <a href="#">Avisos legales</a>
@@ -261,7 +279,7 @@
             </li>
           </ul>
         </div>
-        <div class="content--list col-4">
+        <div class="content--list col-3 offset-1">
           <ul>
             <li>
               <a href="#">Información corporativa</a>
@@ -273,6 +291,12 @@
               <a href="#">Centro de ayuda</a>
             </li>
           </ul>
+        </div>
+      </div>
+      <!-- FOOTER | COPYRIGHT -->
+      <div class="row justify-content-center mt-3">
+        <div class="footer--copyright col-4">
+          <span>© Todos los derechos reservados</span>
         </div>
       </div>
     </footer>
@@ -288,5 +312,7 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
+
+    <script src="../../main.js"></script>
   </body>
 </html>
