@@ -16,31 +16,36 @@
   margin-top: 0px;
 }
 
-/*       ARTICLE CONTENT | AUTHOR       */
-.content--author {
+/*       MAIN       */
+.main--container h2 {
+  color: var(--primary-color);
+  font-size: 42px;
+}
+
+.main--container h5 {
+  color: var(--tertiary-color);
+}
+
+/*       MAIN | CARDS       */
+.main--cards {
+  justify-content: center;
+}
+
+.cards--profile {
   position: relative;
 }
 
-.content--author::before {
-  border-bottom: 2px solid var(--primary-color);
-  content: "";
-  width: 100%;
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-}
-
-.content--author h6 {
+.cards--profile h6 {
   font-size: 25px;
   margin: 0;
 }
 
-.content--author span {
+.cards--profile span {
   color: var(--gray-color);
   font-size: 16px;
 }
 
-.author--image img {
+.profile--image img {
   border-radius: 50%;
   width: 100px;
   height: 100px;
