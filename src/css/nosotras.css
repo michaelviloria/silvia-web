@@ -26,21 +26,36 @@
   color: var(--tertiary-color);
 }
 
+.main--container h4 {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
 /*       MAIN | CARDS       */
 .main--cards {
   justify-content: center;
 }
 
-.cards--profile {
+.card--profile {
   position: relative;
 }
 
-.cards--profile h6 {
+.card--profile:nth-child(-n+2)::before,
+.card--profile:nth-child(4)::before {
+  position: absolute;
+  border-right: 1px solid var(--primary-color);
+  height: 100%;
+  content: "";
+  right: 8px;
+  top: 0;
+}
+
+.card--profile h6 {
   font-size: 25px;
   margin: 0;
 }
 
-.cards--profile span {
+.card--profile span {
   color: var(--gray-color);
   font-size: 16px;
 }
