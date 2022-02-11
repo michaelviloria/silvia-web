@@ -2,12 +2,20 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:root {
   --primary-color: #30cc28ff;
   --secondary-color: #aa0000ff;
   --tertiary-color: #232323ff;
   --green-dark-color: #30cc28;
   --white-color: #fff;
   --gray-color: #676666;
+  --text-color: #212529;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*       CAROUSEL       */
@@ -15,17 +23,17 @@
   padding: 0;
 }
 
-#carouselMain .carousel-inner {
-  height: 250px;
+.carousel-inner {
+  padding: 0;
 }
 
-#carouselMain .carousel-inner .carousel-item {
+.carousel-item {
   position: relative;
 }
 
-#carouselMain .carousel-inner .carousel-item .carousel--tag {
+.carousel-item .carousel--tag {
   position: absolute;
-  bottom: calc(20% + 42px);
+  bottom: 20px;
   left: 5px;
   background-color: var(--primary-color);
   color: var(--white-color);
@@ -48,27 +56,20 @@
 
 /*       HEADER | INFO       */
 .header--info {
-  justify-content: space-between;
   background-color: var(--tertiary-color);
   color: var(--white-color);
   border-top: 4px solid var(--primary-color);
-  padding: 4px 30px 4px 25px;
-  align-items: center;
 }
 
-.header--info .contact .whatsapp-icon {
-  margin: 0 4px 0 20px;
+.header--info .contact .contact--content .whatsapp-icon {
   height: 20px;
 }
 
-.header--info .contact .whatsapp-icon img {
-  height: 100%;
+.header--info .contact .contact--content .whatsapp-icon img {
+  height: 25px;
 }
 
 /*       HEADER | LOGO      */
-.header--logo {
-  position: relative;
-}
 
 .header--logo picture img {
   width: 42px;
@@ -76,7 +77,6 @@
 
 .header--logo h1 {
   font-size: 63px;
-  margin: 0;
 }
 
 .header--logo h1 a {
@@ -88,68 +88,31 @@
   font-size: 23px;
 }
 
-.header--social-media {
-  position: absolute;
-  right: 20px;
-  top: 25px;
-  align-items: center;
-}
-
 .header--social-media p {
   margin: 0;
 }
 
 .header--social-media picture img {
   width: 42px;
-  margin: 0 5px;
-}
-
-.header--weather {
-  position: absolute;
-  left: 20px;
-  top: 25px;
-  align-items: center;
 }
 
 .header--weather picture {
   background-color: var(--gray-color);
-  margin-right: 2px;
 }
 
-/*       HEADER | NAV       */
+/*       NAV       */
 .header--nav {
-  margin-top: 20px;
   border-top: 1px solid var(--primary-color);
   border-bottom: 3px solid var(--primary-color);
   background-color: var(--white-color);
 }
 
-.header--nav ul {
-  justify-content: center;
-  margin: 0;
-  padding: 10px 0;
+.navbar-light .navbar-toggler {
+  border: 1px solid var(--primary-color);
 }
 
-.header--nav ul li {
-  list-style: none;
-  margin: 0 40px;
-}
-
-.header--nav ul li a {
-  color: #000;
-}
-
-#headerNavSticky.show {
-  border-top: 2px solid var(--primary-color);
-  display: block;
-  position: fixed;
-  top: 0;
-  left: calc(50% - 570px);
-  margin-top: 0;
-  z-index: 1;
-}
-#headerNavSticky.no-visible {
-  display: none;
+.navbar-nav .nav-link {
+  width: fit-content;
 }
 
 /*       MAIN | NEWS | PRINCIPAL      */
@@ -157,18 +120,33 @@
   border-bottom: 4px solid var(--green-dark-color);
 }
 
-.main--container .main--news .news--principal picture img {
+.main--news .news--principal picture img {
   width: 100%;
 }
 
-.main--container .main--news .news--principal {
+.main--news .news--principal {
   border-bottom: 4px solid var(--green-dark-color);
 }
 
+.news--principal a {
+  color: var(--text-color);
+}
+
 /*       MAIN | NEWS | LASTEST         */
-.lastest--title {
+.title--content {
   color: var(--white-color);
   background-color: var(--secondary-color);
+}
+
+.content--article .badge {
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-size: 20px;
+}
+
+.content--article .badge:hover {
+  color: var(--primary-color);
 }
 
 /*       MOST READ       */
@@ -192,37 +170,34 @@
 }
 
 /*       MOST READ | ADVERTISING        */
-.most-read--advertising picture img {
+.advertising--container .advertising--article picture img {
   width: 100%;
 }
 
-/*       MAIN | INTERNATIONAL | SPORTS & POLICY       */
-.international--container,
-.sports--container,
-.policy--container {
-  border-bottom: 4px solid var(--green-dark-color);
-}
-
-/*       MAIN | INTERNATIONAL & SPORTS & POLICY SECTIONS ARTICLES  */
+/*       MAIN | ARTICLES  */
 .title--section {
   color: var(--white-color);
   background-color: var(--secondary-color);
 }
 
-.content--container .content--article picture img {
+.content--article picture img {
   width: 100%;
   height: 200px;
 }
 
-.content--container .content--article p {
+.content--article a {
+  color: var(--text-color);
+}
+
+.content--article p {
   margin: 0;
 }
 
-.content--container .content--article:nth-child(odd) {
+.content--article:nth-child(2n+1) {
   border-right: 1px solid var(--primary-color);
 }
 
-/*       MAIN | INTERNATIONAL | MOST READ       */
+/*       MAIN | MOST READ       */
 .most-read--container {
   position: relative;
 }
@@ -231,7 +206,7 @@
   content: "";
   border-left: 1px solid var(--primary-color);
   position: absolute;
-  height: 94%;
+  height: calc(100% - 65px);
   top: 65px;
   left: 0;
 }
@@ -240,15 +215,34 @@
   content: "";
   border-right: 1px solid var(--primary-color);
   position: absolute;
-  height: 94%;
+  height: calc(100% - 65px);
   top: 65px;
   right: 0;
 }
 
+/*       MAIN | MOST READ | STATISTICS       */
+.statistics--container {
+  position: sticky;
+  top: 70px;
+}
+
+.statistics--container .statistics--articles {
+  background-color: var(--secondary-color);
+}
+
+.statistics--articles article {
+  color: var(--white-color);
+}
+
+.statistics--articles .progress-bar {
+  width: 35%;
+  background-color: var(--primary-color);
+  font-weight: bold;
+  color: var(--tertiary-color);
+}
+
 /*       FOOTER       */
 footer {
-  height: 240px;
-  content: "";
   background-color: var(--tertiary-color);
 }
 
@@ -282,4 +276,13 @@ footer {
   color: var(--white-color);
   margin-top: 20px;
   opacity: 45%;
+}
+
+/*       MEDIA QUERY       */
+
+/*       MAIN | MOST READ | STATISTICS       */
+@media screen and (max-width: 991px) {
+  .statistics--container {
+    position: initial;
+  }
 }

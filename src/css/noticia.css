@@ -7,15 +7,6 @@
   font-size: 12px;
 }
 
-.header--social-media {
-  top: calc(33px - 21px);
-}
-
-/*       HEADER | NAV       */
-.header--nav {
-  margin-top: 0px;
-}
-
 /*       MAIN | ARTICLE PRINCIPAL       */
 .article--principal picture img {
   width: 100%;
