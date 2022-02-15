@@ -169,6 +169,10 @@ html {
   color: var(--gray-color);
 }
 
+.most-read--article a {
+  color: var(--text-color);
+}
+
 /*       MOST READ | ADVERTISING        */
 .advertising--container .advertising--article picture img {
   width: 100%;
@@ -219,6 +223,8 @@ html {
   top: 65px;
   right: 0;
 }
+
+
 
 /*       MAIN | MOST READ | STATISTICS       */
 .statistics--container {
